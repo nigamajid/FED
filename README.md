@@ -40,11 +40,11 @@ https://www.dunkin.nl
 
   #### Screenshot(s) van de eerste pagina (small screen):
   hier de naam van de pagina  
-  <img src="images/dunkinHOME.jpg" width="375px" alt="de homepagina van dunkin donuts">
+  <img src="images/dunkinhome.jpg" width="375px" alt="de homepagina van dunkin donuts">
 
   #### Screenshot(s) van de tweede pagina (small screen):
   hier de naam van de pagina  
-  <img src="images/dunkinDETAIL.jpg" width="375px" alt="een blog van dunkin donuts">
+  <img src="images/dunkindetail.jpg" width="375px" alt="een blog van dunkin donuts">
 
 </details>
 
