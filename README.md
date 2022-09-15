@@ -53,15 +53,15 @@ https://www.dunkin.nl
 ## Toegankelijkheidstest 1/2 (week 1)
 
 <details>
-  <summary>uitwerken na test in 1e werkgroep</summary>
+  <summary>We gingen in groepjes toegankelijkheidstesten doen met onze eigen website. Hierdoor hebben we een paar bevindingen waar we aan kunnen werken</summary>
 
   ### Bevindingen
-  Lijst met je bevindingen die in de test naar voren kwamen:
-
+De tab werkt soms niet goed op elke button etc. Dus bijvoorbeeld voor het logoo kan
+ik er een button van maken.
+Bij de blurred vision zie je de grote kopjes wel en de kleine tekst bijna niet
   #### Screenreader
-  Hier korte omschrijving (met indien nodig afbeeldingen)
+Dit ging wel goed
 
-  Hier een omschrijving van hoe het opgelost kan worden (met indien nodig afbeeldingen)
 
 
   #### Muis en Toetsenbord
@@ -72,13 +72,15 @@ https://www.dunkin.nl
 
   #### Motoriek (shocks, elastiekjes)
   Hier korte omschrijving (met indien nodig afbeeldingen)
-
+met elastiekjes was het moeilijk om in te zoomen
   Hier een omschrijving van hoe het opgelost kan worden (met indien nodig afbeeldingen)
-
+Weet niet zo goed hoe je het moet oplossen
 
   #### Visueel (brillen, contrast, kleurenblind, dark/light).
   Hier korte omschrijving (met indien nodig afbeeldingen)
-
+Dunkindonuts heeft geen dark mode. De mensen met kleurenblind zien andere kleuren
+dan roze en oranje maar meer groen en geel. Er is ook een soort waar ze alleen
+maar roze rood en blauw zien.
   Hier een omschrijving van hoe het opgelost kan worden (met indien nodig afbeeldingen)
 
 </details>
