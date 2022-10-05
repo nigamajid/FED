@@ -53,15 +53,15 @@ https://www.dunkin.nl
 ## Toegankelijkheidstest 1/2 (week 1)
 
 <details>
-  <summary>We gingen in groepjes toegankelijkheidstesten doen met onze eigen website. Hierdoor hebben we een paar bevindingen waar we aan kunnen werken</summary>
+  <summary>uitwerken na test in 1e werkgroep</summary>
 
   ### Bevindingen
-De tab werkt soms niet goed op elke button etc. Dus bijvoorbeeld voor het logoo kan
-ik er een button van maken.
-Bij de blurred vision zie je de grote kopjes wel en de kleine tekst bijna niet
-  #### Screenreader
-Dit ging wel goed
+  Lijst met je bevindingen die in de test naar voren kwamen:
 
+  #### Screenreader
+  Hier korte omschrijving (met indien nodig afbeeldingen)
+
+  Hier een omschrijving van hoe het opgelost kan worden (met indien nodig afbeeldingen)
 
 
   #### Muis en Toetsenbord
@@ -72,15 +72,13 @@ Dit ging wel goed
 
   #### Motoriek (shocks, elastiekjes)
   Hier korte omschrijving (met indien nodig afbeeldingen)
-met elastiekjes was het moeilijk om in te zoomen
+
   Hier een omschrijving van hoe het opgelost kan worden (met indien nodig afbeeldingen)
-Weet niet zo goed hoe je het moet oplossen
+
 
   #### Visueel (brillen, contrast, kleurenblind, dark/light).
   Hier korte omschrijving (met indien nodig afbeeldingen)
-Dunkindonuts heeft geen dark mode. De mensen met kleurenblind zien andere kleuren
-dan roze en oranje maar meer groen en geel. Er is ook een soort waar ze alleen
-maar roze rood en blauw zien.
+
   Hier een omschrijving van hoe het opgelost kan worden (met indien nodig afbeeldingen)
 
 </details>
@@ -93,9 +91,13 @@ maar roze rood en blauw zien.
   <summary>uitwerken na afloop 2e werkgroep</summary>
 
   ### de hele pagina:
-  <img src="images/breakdownschets.jpg" width="375px" alt="breakdown van de hele pagina">
+  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="breakdown van de hele pagina">
 
+  ### dynamisch deel (bijv menu):
+  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="breakdown van een dynamisch deel">
 
+  ### wellicht nog een dynamisch deel (bijv filter):
+  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="breakdown van nog een dynamisch deel">
 
 </details>
 
