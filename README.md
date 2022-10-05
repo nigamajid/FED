@@ -93,7 +93,7 @@ maar roze rood en blauw zien.
   <summary>uitwerken na afloop 2e werkgroep</summary>
 
   ### de hele pagina:
-  <img src="images/breakdownschets.png" width="375px" alt="breakdown van de hele pagina">
+  <img src="images/breakdownschets.jpg" width="375px" alt="breakdown van de hele pagina">
 
 
 
