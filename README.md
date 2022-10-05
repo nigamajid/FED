@@ -78,7 +78,7 @@ Weet niet zo goed hoe je het moet oplossen
 
   #### Visueel (brillen, contrast, kleurenblind, dark/light).
   Hier korte omschrijving (met indien nodig afbeeldingen)
-Dunkindonuts heeft geen dark mode. De mensen met kleurenblind zien andere kleuren
+Dunkin donuts heeft geen dark mode. De mensen met kleurenblind zien andere kleuren
 dan roze en oranje maar meer groen en geel. Er is ook een soort waar ze alleen
 maar roze rood en blauw zien.
   Hier een omschrijving van hoe het opgelost kan worden (met indien nodig afbeeldingen)
@@ -110,26 +110,17 @@ maar roze rood en blauw zien.
   <summary>uitwerken voor 1e voortgang</summary>
 
   ### Stand van zaken
-  hier dit ging goed & dit was lastig (neem ook screenshots op van delen van je website en code)
+Ik vond de breakdown schets maken toch moeilijker dan verwacht. Ik heb veel dingen verbeterd na het opnieuw bekijken met docent. Hierdoor ben ik langer bezig geweest en had ik minder tijd voor de html waardoor ik nog maar best weinig html heb
 
 
   ### Agenda voor meeting
   samen met je groepje opstellen
-
-  | student 1      | student 2          | student 3    | student 4        |
-  | ---            | ---                | ---          | ---              |
-  | dit bespreken  | en dit             | en ik dit    | en dan ik dat    |
-  | en dat ook nog | dit als er tijd is | nog een punt | dit wil ik zeker |
-  | ...            | ...                | ...          | ...              |
+Mijn groepje bestaat uit Ralph, Kim, Thomas en ik. We hebben afgesproken om een groot stuk HTML te hebben en sowieso een header.
 
 
   ### Verslag van meeting
   hier na afloop snel de uitkomsten van de meeting vastleggen
-
-  - punt 1
-  - punt 2
-  - nog een punt
-  - ...
+Nog een paar punten van de breakdown schets besproken, en wat kleine dingen moet ik nog veranderen. Vooral sections met UL en LI's. Verder moet ik gewoon beginnen met het typen van mijn HTML. Anders ga ik achter lopen.
 
 </details>
 
@@ -143,18 +134,12 @@ maar roze rood en blauw zien.
   <summary>uitwerken voor 2e voortgang</summary>
 
   ### Stand van zaken
-  hier dit ging goed & dit was lastig (neem ook screenshots op van delen van je website en code)
+Ik heb mijn HTML afgerond van pagina 1. Alles staat er nu in, ik hoop op de goede manier.. :P. Ik vind het heel lastig om met CSS te beginnen. Vooral omdat je vaak moet gaan kijken naar parents en children en dat snap ik gewoon nog niet zo goed. Ben vooral aan het gokken. Dus ik weet dat als ik begin met CSS dat er veel fout gaat en ben het eigenlijk een beetje aan het ontlopen. Maar ik moet wel gaan beginnen. Na de les van Javascript heb ik gezien hoe je een hamburger menu maakt. Best lastig maar ergens ook wel te doen. Alleen weer moeilijk als ik moet kijken naar welk onderdeel uit de html je moet gebruiken en ook weer met parents en children etc. Dat is het grootste obstakel waar ik tegen aan loop.
 
 
   ### Agenda voor meeting
   samen met je groepje opstellen
-
-  | student 1      | student 2          | student 3    | student 4        |
-  | ---            | ---                | ---          | ---              |
-  | dit bespreken  | en dit             | en ik dit    | en dan ik dat    |
-  | en dat ook nog | dit als er tijd is | nog een punt | dit wil ik zeker |
-  | ...            | ...                | ...          | ...              |
-
+We hebben afgesproken om een deel CSS te maken + een hamburger menu of in ieder geval een start te maken met het hamburger menu want dat kan nog wel lastig zijn. Ik wil tijdens de meeting mijn html laten controleren zodat ik goed begin met de CSS. Verder wil ik een klein stukje CSS laten controleren en kijken hoever ik kom met de hamburger menu.
 
   ### Verslag van meeting
   hier na afloop snel de uitkomsten van de meeting vastleggen
