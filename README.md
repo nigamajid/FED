@@ -95,7 +95,7 @@ maar roze rood en blauw zien.
   ### de hele pagina:
   <img src="images/Breakdownschets.jpg" width="375px" alt="breakdown van de hele pagina"/>
 
-  <img src="images/Breakdownschets.jpg" width="375px" alt="een blog van dunkin donuts">
+  <img src="images/Breakdownschets2.jpg" width="375px" alt="een blog van dunkin donuts">
 
 
 </details>
