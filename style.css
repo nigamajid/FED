@@ -99,22 +99,32 @@ main section:nth-of-type(1){
   position:relative;
 }
 
+main section:nth-of-type(2) img{
+ width: 1em
+ height: 1em;
+}
+
 main section:nth-of-type(1) img{
   background-color:var(--color-welovecoffee);
   transform: translateX(-20em);
-  position:relative;
+  display:block;
   top:-1em;
   width: 100%;
 }
 
+
+
 main section:nth-of-type(1) h2{
   position: absolute;
-  top:0;
-  left:0;
+  z-index: 1;
+  font-size: 2em;
+  font-weight: bold;
+  text-align: center;
 }
 
 main section:nth-of-type(2){
   background-color:var(--color-bestel);
+  text-align: center;
 }
 
 main section:nth-of-type(2){
