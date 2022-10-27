@@ -1,0 +1,434 @@
+
+@font-face {
+  font-family: "Dunkinkopjes";
+  src: url("../fonts/Dunkinkopjes.otf") format("opentype");
+}
+
+@font-face {
+  font-family: "Dunkintekst";
+  src: url("../fonts/Dunkintekst.otf") format("opentype");
+}
+
+/**************/
+/* CSS REMEDY */
+/**************/
+
+*, *::after, *::before {
+  box-sizing:border-box;
+}
+
+button, summary {
+	cursor: pointer;
+}
+
+
+
+
+
+/*********************/
+/* CUSTOM PROPERTIES */
+/*********************/
+
+:root {
+	/* startje */
+	--color-text:#111;
+	--color-background:#eee;
+  --color-welovecoffee:#D2B48C;
+  --color-textkoppen:#fff;
+  --color-bestel:#ED0085;
+  --color-em:#FC592A;
+  --color-p:#9F9F9F;
+  --color-ajax:#7BBFDD;
+  --color-app:#000000;
+}
+
+
+
+
+
+/*******************/
+/* GENERAL STYLING */
+/*******************/
+
+body {
+  color:var(--color-text);
+  background-color:var(--color-background);
+  font-family:'Dunkintekst', sans-serif;
+  margin:0;
+}
+
+h2 {
+  font-family: 'Dunkinkopjes', sans-serif;
+  font-size: 2em;
+  font-weight: bold;
+  color:var(--color-textkoppen);
+  text-transform: uppercase;
+  line-height: 1em;
+  text-align: center;
+  margin:0;
+}
+
+
+h3 {
+  font-family: 'Dunkinkopjes', sans-serif;
+  font-weight: bold;
+  text-transform: uppercase;
+  margin:0;
+  line-height: 1em;
+  font-size:1.10em;
+}
+
+
+a {
+  text-decoration: none;
+}
+
+img {
+  /* width: 10em;
+  margin-left: 20em;
+  margin-top: 2em; */
+  max-width:100%;
+}
+
+.visually-hidden {
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+}
+
+
+
+
+
+
+
+/**********/
+/* HEADER */
+/**********/
+
+header {
+  padding: .5em;
+  text-align: center;
+  background: #ff6e0c;
+  color: white;
+  font-size: 8px; /* klein */
+  width: 100vw;
+  margin-top: 0;
+
+}
+
+header ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  gap:3em;
+}
+
+header a {
+  color: black;
+}
+
+
+
+
+
+/********/
+/* MAIN */
+/********/
+main div{
+  display:grid;
+  gap:1em;
+  padding:1em;
+}
+
+/* section */
+/* we love coffee */
+
+main div section:nth-of-type(1){
+  position:relative;
+  /* wat uitsteekt is niet te zien */
+  overflow:hidden;
+
+  /* dit is het achtergrondplaatje */
+  background-image: url(../images2/coffeeachtergrond.svg);
+  background-size:cover;
+  background-position:center center;
+  /* en de kleur */
+  background-color: var(--color-welovecoffee);
+
+  border-radius:2em;
+}
+
+
+main div section:nth-of-type(1) a {
+  /* om de h2 en image in het midden te zetten */
+  display:grid;
+  justify-items:center;
+  gap:2em;
+  padding: 2em;
+}
+
+main div section:nth-of-type(1) h2{
+  font-size:clamp(2em, 10vw, 4em);
+}
+
+main div section:nth-of-type(1) h2 span{
+  display: block;
+/* zorgt ervoor dat het op een andere regel blijft staan*/
+}
+
+main div section:nth-of-type(1) img {
+  display:block; /* slim */
+  width:50%;
+  height:auto;
+
+
+  /* om het plaatje naar beneden te schuiven */
+  /* doordat de section overflow:hidden heeft zie je het deel dat uitsteekt niet */
+  margin-bottom:-10em;
+  /* beetje leijk - beter om het plaatje zelf een stuk af te snijden in photoshop */
+}
+
+
+
+
+
+
+/* section */
+/* bestel */
+main div section:nth-of-type(2){
+  background-color:var(--color-bestel);
+  text-align: center;
+  padding:2em;
+  border-radius:2em;
+
+  display:grid;
+  gap:1em;
+  grid-template-columns: 1fr 1fr;
+}
+
+main div section:nth-of-type(2) h2{
+  font-size:clamp(2em, 10vw, 3em);
+  grid-column-start: 1;
+  grid-column-end: -1;
+}
+
+main div section:nth-of-type(2) p{
+  color:var(--color-textkoppen);
+  text-align: left;
+  margin:0;
+  grid-column-start: 1;
+  grid-column-end: -1;
+}
+
+
+
+main div section:nth-of-type(2) button{
+  padding:1em;
+  border-radius: .5em;
+  border: none;
+  color:var(--color-textkoppen);
+  background-color:rgb(255 255 255 / .25); /* thanks sanne*/
+}
+
+
+/* section 3 in div */
+/* ajax */
+main div section:nth-of-type(3){
+  position:relative;
+  /* wat uitsteekt is niet te zien */
+  overflow:hidden;
+
+  /* dit is het achtergrondplaatje */
+  /* en de kleur */
+  background-color: var(--color-ajax);
+
+  border-radius:2em;
+}
+
+main div section:nth-of-type(3) a {
+  /* om de h2 en image in het midden te zetten */
+  display:grid;
+  justify-items:center;
+  padding: 2em;
+}
+
+main div section:nth-of-type(3) h2{
+  font-size:clamp(2em, 10vw, 3em);
+}
+
+main div section:nth-of-type(3) h2 span{
+  display: block;
+/* zorgt ervoor dat het op een andere regel blijft staan*/
+}
+
+main div section:nth-of-type(3) img {
+  display:block; /* slim */
+  width:80%;
+  height:auto;
+
+
+  /* om het plaatje naar beneden te schuiven */
+  /* doordat de section overflow:hidden heeft zie je het deel dat uitsteekt niet */
+  margin-bottom:-10em;
+  /* beetje leijk - beter om het plaatje zelf een stuk af te snijden in photoshop */
+}
+
+
+@media (min-width: 41em) {
+ main div{
+   grid-template-columns: 2fr 1fr;
+ }
+
+ main div section:nth-of-type(1){
+   grid-row-start:1;
+   grid-row-end:3;
+ }
+
+ main div section:nth-of-type(1) h2{
+   font-size:clamp(2em, 6vw, 4em);
+ }
+
+ main div section:nth-of-type(2) h2{
+   font-size:clamp(2em, 4vw, 3em);
+ }
+
+ main div section:nth-of-type(3) h2{
+   font-size:clamp(2em, 4vw, 3em);
+ }
+
+}
+
+
+/* section 1 in de main */
+/* bestellen */
+
+main > section:nth-of-type(1) {
+display:grid;
+gap:1em;
+padding:1em;
+
+}
+
+main > section:nth-of-type(1) h2{
+  color:var(--color-bestel);
+  display: flex;
+  flex-direction: column;
+  font-size: 3em;
+  text-align: left;
+  /* gap minder tussen tekst, hoe??*/
+}
+
+main > section:nth-of-type(1) h2 em{
+  color:var(--color-em);
+  font-style: normal;
+}
+
+main > section:nth-of-type(1) ol{
+  margin:0;
+  padding:0;
+  display:grid;
+  gap:1em;
+}
+
+
+main > section:nth-of-type(1) ol li{
+  padding:1em;
+  color:var(--color-bestel);
+  background-color:var(--color-textkoppen);
+  border-radius:1.5em;
+  display:grid;
+  grid-template-columns:max-content 1fr;
+  gap:1em;
+}
+
+main > section:nth-of-type(1) h3{
+font-weight: bold;
+margin:0;
+align-self: end;
+}
+
+main > section:nth-of-type(1) p{
+  color:var(--color-p);
+  margin:0;
+}
+
+
+
+main > section:nth-of-type(1) img{
+  height: 4em;
+  width: 4em;
+  background-color:var(--color-bestel);
+  border-radius:10em;
+  grid-column-start: 1;
+  grid-row-start:1;
+  grid-row-end:3;
+  justify-self:center;
+  align-self: center;
+}
+
+/* lukt niet om met grid samen naast elkaar te zetten*/
+
+/* ik wil de 3e img aanroepen in deze section, weet allen niet hoe want die moet
+een andere achtergrondkleur*/
+
+main > section:nth-of-type(1) a{
+  background-color:var(--color-em);
+  border-radius:10em;
+  padding:1em;
+  color:var(--color-textkoppen);
+  display:block;
+  text-align:center;
+}
+
+@media (min-width:41em){
+  main > section:nth-of-type(1){
+    grid-template-columns: 3fr 4fr;
+  }
+
+  main > section:nth-of-type(1) ol{
+    grid-column-start:2;
+    grid-row-start:1;
+    grid-row-end:3;
+  }
+
+  main > section:nth-of-type(1) h2{
+    align-self:end;
+  }
+
+  main > section:nth-of-type(1) a{
+    align-self:start;
+    justify-self:start;
+    padding:1em 3em;
+  }
+}
+
+
+
+main > section:nth-of-type(4){
+  color:var(--color-textkoppen);
+  background-color:var(--color-ajax);
+  text-align: center;
+}
+
+main > section:nth-of-type(4) img{
+  width: 10em;
+}
+
+main >  section:nth-of-type(5) img{
+  background-color:var(--color-ajax);
+}
+
+main > section:nth-of-type(5) h2{
+  color:var(--color-bestel);
+}
+
+main > section:nth-of-type(5) img:nth-of-type(1){
+color:var(--color-em);
+}
