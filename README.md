@@ -198,16 +198,17 @@ We hebben afgesproken om een deel CSS te maken + een hamburger menu of in ieder 
   <summary>uitwerken voor 3e voortgang</summary>
 
   ### Stand van zaken
-  hier dit ging goed & dit was lastig (neem ook screenshots op van delen van je website en code)
+Ik heb met Sanne gezeten en dat ging best goed. ik ben veel verder gekomen, en ik snap MEER hoe grid in elkaar zit en het is voor mezelf handig om het uit te tekenen
+
 
 
   ### Agenda voor meeting
   samen met je groepje opstellen
 
-  | student 1      | student 2          | student 3    | student 4        |
+  | Kim     | Thomas         | Niga   | Alexander       |
   | ---            | ---                | ---          | ---              |
-  | dit bespreken  | en dit             | en ik dit    | en dan ik dat    |
-  | en dat ook nog | dit als er tijd is | nog een punt | dit wil ik zeker |
+  | ontwerp menu | javascript, content toevoegen menu          | Menu uitklappen   | en dan ik dat    |
+  | tekst en afbeelding | artikelen filteren | er gebeurt niks in met css | Javascript zeker |
   | ...            | ...                | ...          | ...              |
 
 
