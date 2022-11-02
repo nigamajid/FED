@@ -112,7 +112,7 @@ main{
 /* HEADER */
 /**********/
 
-nav{
+header nav{
   position:fixed;
   left:0;
   right:0;
@@ -296,8 +296,48 @@ main div section:nth-of-type(3) img {
   /* om het plaatje naar beneden te schuiven */
   /* doordat de section overflow:hidden heeft zie je het deel dat uitsteekt niet */
   margin-bottom:-10em;
-  /* beetje leijk - beter om het plaatje zelf een stuk af te snijden in photoshop */
 }
+
+/* section met carousel */
+
+main section:nth-of-type(3){
+  position: relative;
+  display:flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+
+
+main section:nth-of-type(3) ul{
+  display:flex;
+  list-style: none;
+  margin:0;
+  padding:0;
+  overflow-x:scroll;
+  width:100%;
+}
+
+main section:nth-of-type(3) li{
+  width:100%;
+  flex-shrink: 0;
+
+  display:flex;
+  flex-direction: column;
+}
+
+main section:nth-of-type(3) li img{
+  order:-1;
+}
+
+/* buttons in section 3 */
+main section:nth-of-type(3) button {
+  /* position:absolute;  */
+  width:2.5em;
+  height: 2.5em;
+  border-radius:50%;
+}
+
 
 
 @media (min-width: 41em) {
@@ -448,9 +488,24 @@ main > section:nth-of-type(5) h2{
   color:var(--color-bestel);
 }
 
-/* main > section:nth-of-type(2) img:nth-of-type(1){
+main > section:nth-of-type(2) img:nth-of-type(1){
 color:var(--color-em);
-} */
+}
+
+@media (min-width:41em){
+  main section:nth-of-type(3) button:nth-of-type(1) {
+
+  }
+
+  main section:nth-of-type(3) button:nth-of-type(2) {
+
+  }
+
+  main section:nth-of-type(3) button {
+  position:absolute;
+ }
+
+}
 
 
 /*  */
@@ -480,12 +535,16 @@ footer {
 
 footer img{
   display:block;
-  border radius:50%;
   width:6em;
-  margin:0 auto 0 auto; /*in het midden zonder flex of grid */
+  margin:0 auto 0 auto;
+   /*in het midden zonder flex of grid */
+   background-color:var(--color-textkoppen);
+   border-radius:50%;
+   box-shadow: .1em .1em .2em #000c;
+   overflow: hidden;
 }
 
-box-shadow: .1em .1em .2em #000c;
+
 
 /* menu */
 footer nav:nth-of-type(1) ul{
@@ -494,17 +553,28 @@ footer nav:nth-of-type(1) ul{
   list-style: none;
   display: flex;
   flex-direction: column;
-  gap:.5em;
+  gap:2em;
+}
+
+footer nav:nth-of-type(1) ul a{
+  display:block;
+  padding:1em;
+  border-radius:10em;
+  text-align: center;
+  text-decoration: none;
+  font-weight: bold;
+  background-color:var(--color-em);
+  color:var(--color-textkoppen);
 }
 
 footer nav:nth-of-type(2) ul{
   margin:0;
   padding:0;
   list-style:none;
-
   display: flex;
   gap:1em;
   justify-content: center;
+
 }
 
 footer nav:nth-of-type(2) ul a {
@@ -517,4 +587,33 @@ footer nav:nth-of-type(2) ul a {
   display:grid;
   justify-content: center;
   align-items: center;
+}
+
+@media (min-width:41em) {
+  footer{
+    padding:1em 3em;
+    flex-direction: row;
+    align-items: center;
+    background-image:
+		linear-gradient(
+			white 0em 4em,
+			darkorange 4em 8em,
+		  white 8em 12em
+    );
+  }
+
+footer img{
+  width: 9em;
+}
+
+/* menu in het footer*/
+footer nav:nth-of-type(1) ul {
+  flex-direction:row;
+ }
+footer nav:nth-of-type(1) ul a {
+  border-radius:0;
+  padding:0 1em;
+  /* line-height:2em; */
+  background-color:transparent;
+ }
 }
