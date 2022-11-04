@@ -118,9 +118,14 @@ header nav{
   right:0;
   top:0;
   bottom:0;
-  /* transform:translateX(-100%); */
+  transform:translateX(-100%);
   background-color: var(--color-em);
   transition: 0.3s;
+}
+
+header nav.toonMenu{
+  transform:translateX(0%);
+  z-index: 1;
 }
 
 header{
@@ -131,7 +136,37 @@ header{
 
 header button{
   order:-1;
+  z-index: 100;
+  padding:0;
+  height: 3em;
+  position:relative;
 }
+
+header button.menuIsOpen{
+  background-color(--color-em);
+}
+
+header img{
+  height: 5em;
+  width: 10em;
+}
+
+header p{
+  /* background-color:var(--color-em);
+  padding:0;
+  width: 100%;
+  text-align: center;
+  width: 100vw;
+  margin-top: 0;
+  margin:0;
+  order:-2;
+  position: relative;
+  align-items: center;
+  display:block; */
+  display:block;
+  width:100%;
+}
+
 
 /* header {
   padding: .5em;
@@ -272,7 +307,7 @@ main div section:nth-of-type(3){
 
   /* dit is het achtergrondplaatje */
   /* en de kleur */
-  background-color: var(--color-ajax);
+  background-color:var(--color-ajax);
 
   border-radius:2em;
 }
@@ -304,13 +339,35 @@ main div section:nth-of-type(3) img {
   margin-bottom:-10em;
 }
 
-/* section met carousel */
+/*  */
+/* SECTION MET "APP JIJ M AL " */
+/*  */
 
+main section:nth-of-type(2){
+  background-color:var(--color-ajax);
+}
+
+main section:nth-of-type(2) h3 p{
+
+}
+
+
+/*  */
+/* section met carousel */
+/*  */
 main section:nth-of-type(3){
   position: relative;
   display:flex;
   justify-content: center;
   flex-wrap: wrap;
+}
+
+main section:nth-of-type(3) h2{
+  color:var(--color-em);
+}
+
+main section:nth-of-type(3) em{
+  color:var(--color-bestel);
 }
 
 
