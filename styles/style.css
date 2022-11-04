@@ -266,6 +266,7 @@ main div section:nth-of-type(2){
   background-color:var(--color-bestel);
   text-align: center;
   padding:2em;
+  margin:0;
   border-radius:2em;
 
   display:grid;
@@ -345,10 +346,38 @@ main div section:nth-of-type(3) img {
 
 main section:nth-of-type(2){
   background-color:var(--color-ajax);
+    border-radius:2em;
+    height:40em;
+    position:relative;
 }
 
-main section:nth-of-type(2) h3 p{
+main section:nth-of-type(2) img:nth-of-type(1){
+width:15em;
+}
 
+
+main section:last-of-type img{
+  position: absolute;
+  left:3em;
+}
+
+
+main section:nth-of-type(2) a{
+  display:grid;
+  justify-items:center;
+  /* om de images in het midden te zetten */
+  gap:1em;
+  padding: 1em;
+}
+
+main section:nth-of-type(2) h3, h2, p{
+  text-align: center;
+  padding:.5em;
+  color:var(--color-textkoppen);
+}
+
+main section:nth-of-type(2) p span{
+  display: block;
 }
 
 
