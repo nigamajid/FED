@@ -40,6 +40,7 @@ button, summary {
   --color-p:#9F9F9F;
   --color-ajax:#7BBFDD;
   --color-app:#000000;
+  --color-lichtgrijs:#D7D7D7;
 }
 
 
@@ -132,14 +133,17 @@ header{
   display: flex;
   flex-direction: row;
   justify-content: center;
+  flex-wrap:wrap;
 }
 
 header button{
-  order:-1;
+  order:2;
   z-index: 100;
   padding:0;
   height: 3em;
-  position:relative;
+  position:absolute;
+  right:1em;
+  top:6.5em;
 }
 
 header button.menuIsOpen{
@@ -149,22 +153,15 @@ header button.menuIsOpen{
 header img{
   height: 5em;
   width: 10em;
+  order:1;
 }
 
 header p{
-  /* background-color:var(--color-em);
-  padding:0;
-  width: 100%;
-  text-align: center;
-  width: 100vw;
-  margin-top: 0;
-  margin:0;
-  order:-2;
-  position: relative;
-  align-items: center;
-  display:block; */
+  background-color:var(--color-em);
+margin-top: 0;
   display:block;
   width:100%;
+  order:0;
 }
 
 
@@ -351,15 +348,8 @@ main section:nth-of-type(2){
 }
 
 main section:nth-of-type(2) img:nth-of-type(1){
-width:15em;
+width:14em;
 }
-
-
-main section:last-of-type img{
-  position: absolute;
-  left:3em;
-}
-
 
 main section:nth-of-type(2) a{
   display:grid;
@@ -398,6 +388,14 @@ main section:nth-of-type(3) em{
   color:var(--color-bestel);
 }
 
+main section:nth-of-type(3) ul li h2{
+  color:var(--color-textkoppen);
+  background-color:var(--color-em);
+  font-size: 1em;
+  display:block;
+  padding:1em 2em;
+  border-radius:10em;
+}
 
 
 main section:nth-of-type(3) ul{
@@ -413,13 +411,20 @@ main section:nth-of-type(3) ul{
 main section:nth-of-type(3) li{
   width:min(100%, 28em);
   flex-shrink: 0;
-
   display:flex;
   flex-direction: column;
+  border:solid;
+  border-color:var(--color-lichtgrijs);
+  border-radius:1em;
+  padding:.5em;
 }
 
 main section:nth-of-type(3) li img{
   order:-1;
+}
+
+main section:nth-of-type(3) p{
+  color:var(--color-app);
 }
 
 /* buttons in section 3 */
@@ -429,8 +434,6 @@ main section:nth-of-type(3) button {
   height: 2.5em;
   border-radius:50%;
 }
-
-
 
 @media (min-width: 41em) {
  main div{
