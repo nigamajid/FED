@@ -458,6 +458,7 @@ main section:nth-of-type(3) ul li h2{
   display:block;
   padding:1em 2em;
   border-radius:10em;
+  order:1;
 }
 
 
@@ -488,6 +489,7 @@ main section:nth-of-type(3) li img{
 
 main section:nth-of-type(3) p{
   color:var(--color-app);
+  order:2;
 }
 
 /* buttons in section 3 */
