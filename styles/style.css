@@ -130,20 +130,28 @@ header nav{
   top:0;
   bottom:0;
   transform:translateX(-100%);
-  background-color: var(--color-em);
+  background-color:var(--color-lichtgrijs);
   transition: 0.3s;
-
-  z-index: 1; /* hier niet hieronder */
 }
 
 header nav.toonMenu{
   transform:translateX(0%);
+    z-index: 1;
+    align-items: center;
 }
 
 header nav ul {
   margin:0;
   padding:0;
   list-style:none;
+  background-color:var(--color-lichtgrijs);
+}
+
+header nav a{
+  color:var(--color-app);
+  font-size: 2em;
+  display: flex;
+  justify-content: center;
 }
 
 /* menu button */
@@ -159,7 +167,7 @@ header button{
 }
 
 header button.menuIsOpen{
-  background-color(--color-em);
+  background-color:var(--color-lichtgrijs);
 }
 
 /* logo */
