@@ -113,6 +113,16 @@ main{
 /* HEADER */
 /**********/
 
+header{
+  position: relative; /* zodat de absolute button binnen de header blijft */
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  flex-wrap:wrap;
+}
+
+/* schuifmenu */
 header nav{
   position:fixed;
   left:0;
@@ -122,46 +132,87 @@ header nav{
   transform:translateX(-100%);
   background-color: var(--color-em);
   transition: 0.3s;
+
+  z-index: 1; /* hier niet hieronder */
 }
 
 header nav.toonMenu{
   transform:translateX(0%);
-  z-index: 1;
 }
 
-header{
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  flex-wrap:wrap;
+header nav ul {
+  margin:0;
+  padding:0;
+  list-style:none;
 }
 
+/* menu button */
 header button{
   order:2;
   z-index: 100;
   padding:0;
-  height: 3em;
+  height: 2.75em;
   position:absolute;
-  right:1em;
-  top:6.5em;
+  right:1em; /* minimale grootte voor tekst */
+  bottom:1.125em; /* naast het logo */
+  font-size:1em;
 }
 
 header button.menuIsOpen{
   background-color(--color-em);
 }
 
+/* logo */
 header img{
   height: 5em;
   width: 10em;
   order:1;
 }
 
-header p{
+/* voor 10 uur besteld */
+header p {
   background-color:var(--color-em);
-margin-top: 0;
+  margin-top: 0;
   display:block;
   width:100%;
-  order:0;
+  /* order:0; */ /* dat is de default - hoef je niet te doen */
+}
+
+/* header a:nth-of-type(5){
+display:none;
+} */
+
+@media (min-width: 48em) {
+  header {
+    justify-content: space-between;
+  }
+
+  header nav {
+    position: absolute;
+    transform:none;
+    background:none;
+    order:1; /* als laatste naast het logo */
+    left:25em;
+    top:5em;
+  }
+
+  header nav ul {
+    display:flex;
+    gap:1em;
+    margin-right:1em;
+  }
+
+header nav a{
+  color:var(--color-app);
+}
+
+  header img {
+    margin-left:1em;
+  }
+
+  header button {
+    display: none; /*  niet meer nodig */
+  }
 }
 
 
@@ -170,7 +221,7 @@ margin-top: 0;
   text-align: center;
   background: #ff6e0c;
   color: white;
-  font-size: 8px; /* klein */
+  font-size: 8px; /* klein
   width: 100vw;
   margin-top: 0;
 } */
@@ -295,6 +346,18 @@ main div section:nth-of-type(2) button{
   background-color:rgb(255 255 255 / .25); /* thanks sanne*/
 }
 
+main div section:nth-of-type(2) button:hover{
+  color:var(--color-app);
+}
+
+main div section:nth-of-type(2) button:focus{
+  color:var(--color-bestel);
+  background-color: var(--color-textkoppen);
+}
+
+main div section:nth-of-type(2) button:active{
+  background-color: var(--color-em);
+}
 
 /* section 3 in div */
 /* ajax */
@@ -540,6 +603,21 @@ main > section:nth-of-type(1) a{
   display:block;
   text-align:center;
 }
+
+main > section:nth-of-type(1) a:hover{
+  color:var(--color-app);
+}
+
+main > section:nth-of-type(1) a:active{
+  background-color:var(--color-bestel);
+  color:var(--color-textkoppen);
+}
+
+main > section:nth-of-type(1) a:focus{
+  color:var(--color-app);
+  background-color: var(--color-lichtgrijs);
+}
+
 
 @media (min-width:41em){
   main > section:nth-of-type(1){

@@ -1,0 +1,495 @@
+
+@font-face {
+  font-family: "Dunkinkopjes";
+  src: url("../fonts/Dunkinkopjes.otf") format("opentype");
+}
+
+@font-face {
+  font-family: "Dunkintekst";
+  src: url("../fonts/Dunkintekst.otf") format("opentype");
+}
+
+/**************/
+/* CSS REMEDY */
+/**************/
+
+*, *::after, *::before {
+  box-sizing:border-box;
+}
+
+button, summary {
+	cursor: pointer;
+}
+
+
+
+
+
+/*********************/
+/* CUSTOM PROPERTIES */
+/*********************/
+
+:root {
+	/* startje */
+	--color-text:#111;
+	--color-background:#eee;
+  --color-welovecoffee:#D2B48C;
+  --color-textkoppen:#fff;
+  --color-bestel:#ED0085;
+  --color-em:#FC592A;
+  --color-p:#9F9F9F;
+  --color-ajax:#7BBFDD;
+  --color-app:#000000;
+  --color-lichtgrijs:#D7D7D7;
+  --color-blogtekst:#512d00
+}
+
+
+
+
+
+/*******************/
+/* GENERAL STYLING */
+/*******************/
+
+body {
+  color:var(--color-text);
+  background-color:var(--color-background);
+  font-family:'Dunkintekst', sans-serif;
+  margin:0;
+}
+
+h2 {
+  font-family: 'Dunkinkopjes', sans-serif;
+  font-size: 2em;
+  font-weight: bold;
+  color:var(--color-textkoppen);
+  text-transform: uppercase;
+  line-height: 1em;
+  text-align: center;
+  margin:0;
+}
+
+section p {
+  font-family: 'Dunkinkopjes', sans-serif;
+  font-weight: bold;
+  text-transform: uppercase;
+  margin:0;
+  line-height: 1em;
+  font-size:1em;
+}
+
+
+a {
+  text-decoration: none;
+}
+
+img {
+  max-width:100%;
+}
+
+.visually-hidden {
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+}
+
+
+
+main{
+  max-width:1000
+}
+
+
+/**********/
+/* HEADER */
+/**********/
+
+header{
+  position: relative; /* zodat de absolute button binnen de header blijft */
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  flex-wrap:wrap;
+}
+
+/* schuifmenu */
+header nav{
+  position:fixed;
+  left:0;
+  right:0;
+  top:0;
+  bottom:0;
+  transform:translateX(-100%);
+  background-color: var(--color-em);
+  transition: 0.3s;
+
+  z-index: 1; /* hier niet hieronder */
+}
+
+header nav.toonMenu{
+  transform:translateX(0%);
+}
+
+header nav ul {
+  margin:0;
+  padding:0;
+  list-style:none;
+}
+
+/* menu button */
+header button{
+  order:2;
+  z-index: 100;
+  padding:0;
+  height: 2.75em;
+  position:absolute;
+  right:1em; /* minimale grootte voor tekst */
+  bottom:1.125em; /* naast het logo */
+  font-size:1em;
+}
+
+header button.menuIsOpen{
+  background-color(--color-em);
+}
+
+/* logo */
+header img{
+  height: 5em;
+  width: 10em;
+  order:1;
+}
+
+/* voor 10 uur besteld */
+header p {
+  background-color:var(--color-em);
+  margin-top: 0;
+  display:block;
+  width:100%;
+  /* order:0; */ /* dat is de default - hoef je niet te doen */
+}
+
+
+@media (min-width: 48em) {
+  header {
+    justify-content: space-between;
+  }
+
+  header nav {
+    position: absolute;
+    transform:none;
+    background:none;
+    order:1; /* als laatste naast het logo */
+    left:25em;
+    top:6.5em;
+  }
+
+  header nav ul {
+    display:flex;
+    gap:1em;
+    margin-right:1em;
+  }
+
+  header nav a{
+    color:var(--color-app);
+  }
+
+  header img {
+    margin-left:1em;
+  }
+
+  header button {
+    display: none; /*  niet meer nodig */
+  }
+
+  header p{
+    text-align: center;
+    color:var(--color-textkoppen);
+  }
+}
+
+
+
+/********/
+/* MAIN */
+/********/
+
+p{
+  text-align: left;
+padding:1em;
+}
+
+main section:nth-of-type(1) p:nth-of-type(1){
+  color:var(--color-em);
+}
+
+main section:nth-of-type(1) p:nth-of-type(2){
+color:var(--color-blogtekst);
+}
+
+main section:nth-of-type(1) p:nth-of-type(4){
+color:var(--color-blogtekst);
+}
+
+main section p:nth-of-type(3){
+  color:var(--color-lichtgrijs);
+  text-transform: lowercase;
+}
+
+main section p:nth-of-type(5){
+  color:var(--color-lichtgrijs);
+  text-transform: lowercase;
+}
+
+main section:nth-of-type(1) a:hover{
+  text-decoration: underline;
+}
+
+main section:nth-of-type(1) a:focus{
+  background-color: var(--color-textkoppen);
+color:var(--color-em);
+ text-decoration:underline;
+}
+
+main section:nth-of-type(1) a:active{
+  color:var(--color-em);
+}
+
+main section:nth-of-type(1) img{
+  display:block;
+    width:min(100%, 28em)
+}
+
+@media (min-width: 41em) {
+main section:nth-of-type(1) img{
+padding:2em;
+margin-left: 10em;
+width:60%;
+
+}
+
+
+
+}
+
+/*  */
+/* section met carousel */
+/*  */
+main section:nth-of-type(2){
+  position: relative;
+  display:flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+main section:nth-of-type(2) h2{
+  color:var(--color-em);
+}
+
+main section:nth-of-type(2) em{
+  color:var(--color-bestel);
+}
+
+main section:nth-of-type(2) ul li h2{
+  color:var(--color-textkoppen);
+  background-color:var(--color-em);
+  font-size: 1em;
+  display:block;
+  padding:1em 2em;
+  border-radius:10em;
+}
+
+
+main section:nth-of-type(2) ul{
+  display:flex;
+  list-style: none;
+  margin:0;
+  padding:0;
+  overflow-x:scroll;
+  width:100%;
+  gap:2em;
+}
+
+main section:nth-of-type(2) li{
+  width:min(100%, 28em);
+  flex-shrink: 0;
+  display:flex;
+  flex-direction: column;
+  border:solid;
+  border-color:var(--color-lichtgrijs);
+  border-radius:1em;
+  padding:.5em;
+}
+
+main section:nth-of-type(2) li img{
+  order:-1;
+}
+
+main section:nth-of-type(2) p{
+  color:var(--color-app);
+}
+
+/* buttons in section 3 */
+main section:nth-of-type(2) button {
+  /* position:absolute;  */
+  width:2.5em;
+  height: 2.5em;
+  border-radius:50%;
+}
+
+main section:nth-of-type(2) button:focus{
+  color:var(--color-bestel);
+}
+
+main section:nth-of-type(2) button:hover{
+  background-color:var(--color-em);
+}
+
+main section:nth-of-type(2) button:active{
+  color:var(--color-textkoppen);
+}
+
+@media (min-width: 54em) {
+  main section:nth-of-type(2) {
+    max-width:48em;
+    margin:0 auto;
+  }
+
+  main section:nth-of-type(2) ul {
+    scroll-snap-type: x mandatory;
+  }
+
+  main section:nth-of-type(2) li {
+    scroll-snap-align: center;
+    width:calc((100% - 4em) / 3);
+  }
+
+  main section:nth-of-type(2) button {
+    position:absolute;
+    top:12em;
+  }
+
+  main section:nth-of-type(2) button:nth-of-type(1) {
+    left:-4em;
+  }
+
+  main section:nth-of-type(2) button:nth-of-type(2) {
+    right:-4em;
+  }
+}
+
+
+/*  */
+/*  */
+/* FOOTER */
+/*  */
+/*  */
+
+body {
+	margin:0;
+}
+
+footer {
+	position:relative;
+
+/* 	background-color:darkorange; */
+
+	background-image:
+		linear-gradient(white 3em,
+		darkorange 3em);
+
+	display:flex;
+	flex-direction:column;
+	gap:2em;
+	padding:0 1em 2em 1em;
+}
+
+footer img{
+  display:block;
+  width:6em;
+  margin:0 auto 0 auto;
+   /*in het midden zonder flex of grid */
+   background-color:var(--color-textkoppen);
+   border-radius:50%;
+   box-shadow: .1em .1em .2em #000c;
+   overflow: hidden;
+}
+
+
+
+/* menu */
+footer nav:nth-of-type(1) ul{
+  margin:0;
+  padding:0;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap:2em;
+}
+
+footer nav:nth-of-type(1) ul a{
+  display:block;
+  padding:1em;
+  border-radius:10em;
+  text-align: center;
+  text-decoration: none;
+  font-weight: bold;
+  background-color:var(--color-em);
+  color:var(--color-textkoppen);
+}
+
+footer nav:nth-of-type(2) ul{
+  margin:0;
+  padding:0;
+  list-style:none;
+  display: flex;
+  gap:1em;
+  justify-content: center;
+
+}
+
+footer nav:nth-of-type(2) ul a {
+  display: block;
+  width:2.5em;
+  aspect-ratio:1/1;
+  background-color:white;
+  border-radius:50%;
+
+  display:grid;
+  justify-content: center;
+  align-items: center;
+}
+
+@media (min-width:41em) {
+  footer{
+    padding:1em 3em;
+    flex-direction: row;
+    align-items: center;
+    background-image:
+		linear-gradient(
+			white 0em 4em,
+			darkorange 4em 8em,
+		  white 8em 12em
+    );
+  }
+
+footer img{
+  width: 9em;
+}
+
+/* menu in het footer*/
+footer nav:nth-of-type(1) ul {
+  flex-direction:row;
+ }
+footer nav:nth-of-type(1) ul a {
+  border-radius:0;
+  padding:0 1em;
+  /* line-height:2em; */
+  background-color:transparent;
+ }
+}
