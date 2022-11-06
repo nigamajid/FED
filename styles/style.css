@@ -315,12 +315,7 @@ main div section:nth-of-type(1) img {
   /* om het plaatje naar beneden te schuiven */
   /* doordat de section overflow:hidden heeft zie je het deel dat uitsteekt niet */
   margin-bottom:-10em;
-  /* beetje leijk - beter om het plaatje zelf een stuk af te snijden in photoshop */
 }
-
-
-
-
 
 
 /* section */
@@ -536,7 +531,8 @@ main section:nth-of-type(3) button {
  main div section:nth-of-type(3) h2{
    font-size:clamp(2em, 4vw, 3em);
  }
-
+/* clamp is dat wanneer het groeit het minimaal 2em is,
+en maximaal 3em en het vw dat het meegroeit. */
 }
 
 
@@ -607,10 +603,6 @@ main > section:nth-of-type(1) img{
   align-self: center;
 }
 
-/* lukt niet om met grid samen naast elkaar te zetten*/
-
-/* ik wil de 3e img aanroepen in deze section, weet allen niet hoe want die moet
-een andere achtergrondkleur*/
 
 main > section:nth-of-type(1) a{
   background-color:var(--color-em);
@@ -681,6 +673,8 @@ main > section:nth-of-type(5) h2{
 main > section:nth-of-type(2) img:nth-of-type(1){
 color:var(--color-em);
 }
+
+/* groot scherm carousel */
 
 @media (min-width: 54em) {
   main section:nth-of-type(3) {
